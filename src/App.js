@@ -1,29 +1,11 @@
 import styled from "styled-components";
-
-// tag template literal
-const BasicTitle = styled.h1`
-  text-align: center;
-  text-transform: capitalize;
-`;
-
-const DefaultButton = styled.button`
-  background: #645cff;
-  color: #fff;
-  text-transform: capitalize;
-  cursor: pointer;
-  padding: 0.25rem;
-  margin: 1rem auto;
-  border-radius: 0.25rem;
-  width: 200px;
-  border: none;
-  display: block;
-`;
-
+import ComplexTitle from "./components/ComplexTitle";
+import AlternativeTitle from "./components/AlternativeTitle";
 function App() {
   return (
-    <div style={{ padding: "2rem", backgroundColor: "grey" }}>
-      <BasicTitle>styled component</BasicTitle>
-      <DefaultButton>click me</DefaultButton>
+    <div style={{ padding: "2rem" }}>
+      <ComplexTitle title="more complex title" />
+      <AlternativeTitle title="more complex title" />
     </div>
   );
 }
