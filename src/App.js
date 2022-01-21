@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Loading from "./components/loading";
-import Form from "./components/Form";
+import List from "./components/List";
 function App() {
   return (
     <div style={{ padding: "2rem" }}>
-      <Form />
+      <List />
     </div>
   );
 }
